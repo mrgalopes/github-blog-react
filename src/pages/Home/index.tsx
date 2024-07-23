@@ -1,4 +1,3 @@
-import { Header } from "../../components/Header";
 import {
   HomeContainer,
   ProfileCard,
@@ -28,7 +27,6 @@ import {
 export function Home() {
   return (
     <HomeContainer>
-      <Header />
       <ProfileCard>
         <img src={avatarImg} alt="" />
         <ProfileText>
