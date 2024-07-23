@@ -1,14 +1,16 @@
 import {
   HomeContainer,
-  ProfileCard,
   SearchInput,
   SearchContainer,
   CardContainer,
   Card,
-  ProfileText,
-  ProfileLink,
 } from "./styles";
 
+import {
+  ProfileCard,
+  ProfileLink,
+  ProfileText,
+} from "../../components/Profile";
 import { TextM, TextS, TitleL, TitleM, TitleS } from "../../styles/mixins";
 import avatarImg from "../../assets/avatar.png";
 
