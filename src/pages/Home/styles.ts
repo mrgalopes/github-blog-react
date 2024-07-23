@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { defaultTheme } from "../../styles/themes/default";
 
 export const HomeContainer = styled.div`
   padding-bottom: 15rem;
@@ -69,12 +68,6 @@ export const ProfileLink = styled.a`
   align-items: center;
 `
 
-export const TitleL = styled.h1`
-  color: ${props => props.theme.baseTitle};
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 1.3;
-`
 
 export const SearchContainer = styled.div`
   max-width: 864px;
@@ -88,19 +81,6 @@ export const SearchContainer = styled.div`
 
 `
 
-export const TitleS = styled.span`
-  color: ${props => props.theme.baseSubtitle};
-  font-size: 1.125rem;
-  line-height: 1.6;
-  font-weight: bold;
-`
-
-export const TextS = styled.span`
-  color: ${props => props.theme.baseSpan};
-  font-size: 0.875rem;
-  line-height: 1.6;
-  font-weight: 500;
-`
 
 export const SearchInput = styled.input`
   margin-top: 0.75rem;
@@ -155,18 +135,3 @@ export const Card = styled.div`
   }
 `
 
-export const TitleM = styled.span`
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: ${props => props.theme.baseTitle};
-  font-weight: bold;
-`
-
-interface TextProps {
-  $variant?: keyof typeof defaultTheme
-}
-
-export const TextM = styled.p<TextProps>`
-  color: ${props => props.theme[props.$variant ?? "baseText"]};
-  line-height: 1.6;
-`

@@ -3,17 +3,13 @@ import {
   ProfileCard,
   SearchInput,
   SearchContainer,
-  TextS,
-  TitleS,
   CardContainer,
   Card,
-  TitleM,
-  TextM,
-  TitleL,
   ProfileText,
   ProfileLink,
 } from "./styles";
 
+import { TextM, TextS, TitleL, TitleM, TitleS } from "../../styles/mixins";
 import avatarImg from "../../assets/avatar.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
